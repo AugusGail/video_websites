@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Video.js | HTML5 Video Player</title>
+		<link href="http://vjs.zencdn.net/5.0.2/video-js.css" rel="stylesheet">
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<style>
+			.navbar-center {
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body style="padding-top: 70px; min-width: 700px">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #62B1F9; height: 70px;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+					<a class="navbar-brand" href="#">logo</a>
+				</div>
+				<div class="collapse navbar-collapse" id="top-navbar-collapse">
+					<form class="navbar-form navbar-center" role="search" method="get" action="#">
+						<div class="form-group" style="width: 40%">
+							<input type="text" name="search" class="form-control" placeholder="搜索" style="border-radius: 20px; display: inline; width: 95%">
+							<button type="submit" style="margin-left: -45px; border: 0; background-color: white;">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<!--视频介绍-->
+					<div class="panel panel-default" id="panel">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-sm-3">
+									<img src="http://img.fl6n.com/public/upload/share/000/008/333/77/0c405d912e76c48e8743a35aff49fd9592q95X_100x139.jpg" class="img-responsive" style="width: 100%;">
+								</div>
+								<div class="col-sm-9">
+									<h4>追龙</h4>
+									<p>主演：甄子丹 刘德华 姜皓文 郑则仕 刘浩龙 汤镇业 喻亢 胡然 徐冬冬 黄日华 陈惠敏 周丽淇 吴毅将</p>
+									<p>导演：王晶 关智耀 编剧：王晶</p>
+									<p>类型：动作 犯罪</p>
+									<p>语言：粤语 / 汉语普通话地区：香港 中国大陆片长：128 分</p>
+									<p>年份：2017 又名：卧虎2 跛豪 Chasing the Dragon</p>
+								</div>
+							</div>
+							<div>
+								<h4>剧情简介</h4>
+								<p>电影讲述了香港现代史上两大著名狠角色大毒枭跛豪（甄子丹饰）、五亿探长雷洛（刘德华饰）的传奇故事。 　　上世纪六七十年代，香港由英国殖民，权势腐败、社会混乱。1963年，穷困潦倒的青年阿豪（甄子丹饰）偷渡至香港，抱着“生死有命、富贵在天”之心决意一搏人生。阿豪带着几个兄弟，从九龙城寨底层开始一路刀刃舔血，爬上香港毒品霸主之位，一手掌控香港十大黑帮，江湖人称“跛豪”。而雷洛（刘德华饰）则从一位普通探长一步步爬上华人总探长高位，统领全香港三万警察，手握香港治安“潜规则”。为垄断香港黄赌毒三大经济产业，跛豪与雷洛结拜为兄弟，两人一黑一白两手遮天，权势滔天，家财亿万，独霸香港岛……</p>
+							</div>
+						</div>
+					</div>
+					<!--视频播放器-->
+					<video id="video" class="video-js" controls hidden="" style="" data-setup="{}">
+						<source src="http://dl161.80s.im:920/1712/追龙/追龙.mp4" type="video/mp4"></source>
+						<source src="myvideo.ogv" type="video/ogg"></source>
+						<source src="myvideo.webm" type="video/webm"></source>
+						<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+                		<param name="movie" value="myvideo.swf" />
+                		<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+                	</object> 当前浏览器不支持 video直接播放，点击这里下载视频：
+						<a href="myvideo.webm">下载视频</a>
+					</video>
+					<button class="btn btn-block btn-success btn-lg" onclick="show()">播放<span class="glyphicon glyphicon-expand"></span></button>
+					<script>
+						function show() {
+							document.getElementById("panel").style.display = "none";
+							document.getElementById("video").style.visibility = "visible";
+						}
+					</script>
+				</div>
+				<div class="col-xs-4">
+					<div class="panel panel-default" style="border: 0;">
+						<div class="panel-body" style="border: 0;">
+							<h3>相关</h3>
+							<div class="row">
+								<div class="col-sm-5">
+									<img src="http://image.uczzd.cn/7603316629990825406.jpg" class="img-responsive">
+								</div>
+								<div class="col-sm-7">
+									<p>捷豹C-X17概念车量产，颜值远超宝马X6，转…</p>
+								</div>
+							</div>
+							<hr>
+
+							<div class="row">
+								<div class="col-sm-5">
+									<img src="http://image.uczzd.cn/7603316629990825406.jpg" class="img-responsive">
+								</div>
+								<div class="col-sm-7">
+									<p>捷豹C-X17概念车量产，颜值远超宝马X6，转…</p>
+								</div>
+							</div>
+							<hr>
+
+							<div class="row">
+								<div class="col-sm-5">
+									<img src="http://image.uczzd.cn/7603316629990825406.jpg" class="img-responsive">
+								</div>
+								<div class="col-sm-7">
+									<p>捷豹C-X17概念车量产，颜值远超宝马X6，转…</p>
+								</div>
+							</div>
+							<hr>
+
+							<div class="row">
+								<div class="col-sm-5">
+									<img src="http://image.uczzd.cn/7603316629990825406.jpg" class="img-responsive">
+								</div>
+								<div class="col-sm-7">
+									<p>捷豹C-X17概念车量产，颜值远超宝马X6，转…</p>
+								</div>
+							</div>
+							<hr>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script>
+		<script src="http://vjs.zencdn.net/5.0.2/video.js"></script>
+
+		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+
+</html>

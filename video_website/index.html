@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="http://vjs.zencdn.net/5.8.8/video-js.css" rel="stylesheet">
+		<style>
+			.a {
+	background-color: #f8f8f8;
+	border-color: #e7e7e7
+}
+		</style>
+		
+	</head>
+
+	<body>
+
+		<nav class="a">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<h1>
+							<img src="images/logo.png"/>
+						</h1>
+					</a>
+				</div>
+				<div class="top-search">
+				<form action="" method="post" class="navbar-form navbar-right">
+					<input type="text" id="get" name="get" class="form-control"/>
+					<input type="submit" value="" style="background: url(images/9.png);"/>
+				</form>
+				</div>
+			</div>
+		</nav>
+		<video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+			  poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+			    <source src="F:/迅雷下载/明星大侦探第二季/[明星大侦探]0310期：07案：恐怖童谣_bd.mp4" type='video/mp4'>
+			    <source src="MY_VIDEO.webm" type='video/webm'>
+			    <p class="vjs-no-js">
+			      To view this video please enable JavaScript, and consider upgrading to a web browser that
+			      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+			    </p>
+		</video>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+
+		<script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
+
+		<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+</html>
